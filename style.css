@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #039c88;
+}
+
+.stopwatch {
+    background: #0FDCDC;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /*transition: transform 1s ease-out;*/
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.stopwatch:hover {
+    transform: translate(-50%, -50%) scale(1.5); /* Scale up by 10% on hover */
+}
+.stopwatch.hover-effect:hover {
+    transform: scale(10); /* Example: Increase size on hover */
+    /* Add more hover effects as needed */
+}
+.display {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 30%;
+}
+
+.laps {
+    margin-top: 20px;
+}
+
+.laps ul {
+    list-style: none;
+    padding: 0;
+}
+
+.laps li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
